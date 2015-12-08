@@ -182,7 +182,7 @@
             setExp: function (key, exp) {
                 var item = this.get(key);
                 if(item !== null && item !== undefined) {
-                    item.e = _getExpDate(exp);
+                    item.e = _getExpDate(exp,item.c);
                     this.set(key,_serialize(item),exp);
                 }
             },
