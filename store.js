@@ -4,7 +4,7 @@
     } else if (typeof exports === 'object') {
         module.exports = factory();
     } else {
-        root.WebStorageCache = factory();
+        root.store = factory();
     }
 }(this, function () {
     "use strict";
